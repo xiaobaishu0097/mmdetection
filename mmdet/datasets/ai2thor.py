@@ -1,4 +1,4 @@
-from .registry import DATASETS
+from .builder import DATASETS
 from pycocotools.coco import COCO
 from .custom import CustomDataset
 
