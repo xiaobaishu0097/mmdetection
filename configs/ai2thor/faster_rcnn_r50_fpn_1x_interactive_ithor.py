@@ -1,13 +1,12 @@
-_base_ = 'faster_rcnn/faster_rcnn_r50_caffe_fpn_1x_coco.py'
+_base_ = '../faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py'
 
 model = dict(
     roi_head=dict(
         bbox_head=dict(num_classes=29)))
 
-data_root = '/home/dhm/Data/Interactive_iTHOR_Detection_Data/'
-
 # Modify dataset related settings
 dataset_type = 'InteractiveiTHORDataset'
+data_root = '/home/duhm/Data/Interactive_iTHOR_Detection_Data/'
 classes = ('balloon',)
 data = dict(
     train=dict(

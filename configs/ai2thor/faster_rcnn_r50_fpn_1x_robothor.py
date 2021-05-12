@@ -1,13 +1,12 @@
-_base_ = 'faster_rcnn/faster_rcnn_r50_caffe_fpn_1x_coco.py'
+_base_ = '../faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py'
 
 model = dict(
     roi_head=dict(
-        bbox_head=dict(num_classes=13)))
-
-data_root = '/home/dhm/Data/RoboTHOR_Detection_Data/'
+        bbox_head=dict(num_classes=14)))
 
 # Modify dataset related settings
 dataset_type = 'RoboTHORDataset'
+data_root = '/home/duhm/Data/RoboTHOR_Detection_Data/'
 classes = (
     'AlarmClock', 'Apple', 'BaseballBat', 'BasketBall', 'Bowl', 'GarbageCan', 'HousePlant',
     'Laptop', 'Mug', 'RemoteControl', 'SprayBottle', 'Television', 'Vase',

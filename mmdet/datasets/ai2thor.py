@@ -5,7 +5,7 @@ from .custom import CustomDataset
 import numpy as np
 
 
-@DATASETS.register_module
+@DATASETS.register_module()
 class iTHORDataset(CustomDataset):
 
     CLASSES = (
@@ -57,7 +57,7 @@ class iTHORDataset(CustomDataset):
         return ann
 
 
-@DATASETS.register_module
+@DATASETS.register_module()
 class RoboTHORDataset(CustomDataset):
 
     CLASSES = (
@@ -108,7 +108,7 @@ class RoboTHORDataset(CustomDataset):
         return ann
 
 
-@DATASETS.register_module
+@DATASETS.register_module()
 class InteractiveiTHORDataset(CustomDataset):
 
     CLASSES = (
