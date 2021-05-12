@@ -25,3 +25,5 @@ data = dict(
         img_prefix=data_root+'val/',
         classes=classes,
         ann_file=data_root+'annotations/instances_val.json'))
+
+runner = dict(max_epochs=4)
